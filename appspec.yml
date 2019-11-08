@@ -4,6 +4,24 @@ files:
   - source: \index.html
     destination: c:\inetpub\wwwroot
 hooks:
+  ApplicationStop:
+    - location: \before-install.bat
+      timeout: 35
+  DownloadBundle:
+    - location: \before-install.bat
+      timeout: 35      
   BeforeInstall:
     - location: \before-install.bat
       timeout: 35
+  Install:
+    - location: \before-install.bat
+      timeout: 35
+  AfterInstall:
+    - location: \before-install.bat
+      timeout: 35
+  ApplicationStart:
+    - location: \before-install.bat
+      timeout: 35  
+  ValidateService:
+    - location: \before-install.bat
+      timeout: 35       

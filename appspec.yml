@@ -6,7 +6,7 @@ files:
 hooks:
   ApplicationStop:
     - location: \before-install.bat
-      timeout: 34
+      timeout: 33
   DownloadBundle:
     - location: \before-install.bat
       timeout: 34      

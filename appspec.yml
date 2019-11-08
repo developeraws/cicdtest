@@ -9,7 +9,7 @@ hooks:
       timeout: 34
   DownloadBundle:
     - location: \before-install.bat
-      timeout: 35      
+      timeout: 34      
   BeforeInstall:
     - location: \before-install.bat
       timeout: 35
